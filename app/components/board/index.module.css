@@ -1,0 +1,22 @@
+.boardcontainer{
+    @apply absolute p-4 left-4 top-1/3 h-fit w-fit;
+    border: 1px solid theme('colors.border1');
+    .colorboxcontainer{
+        @apply text-sm;
+        .colorscontainer{
+            @apply flex gap-2 my-2;
+            .colorbox{
+                @apply w-6 h-6 rounded-md cursor-pointer;
+                &:hover , &.active {
+                    border:2px solid theme('colors.border2');
+                    box-shadow: theme('colors.shadow2');
+                }
+            }
+        }
+    }
+    .pensizecontainer{
+        input{
+            @apply w-full cursor-pointer hover:border;
+        }
+    }
+}

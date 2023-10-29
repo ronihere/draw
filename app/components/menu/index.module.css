@@ -1,0 +1,13 @@
+.menucontainer{
+    @apply absolute left-1/2 flex justify-center items-center  m-4 gap-10 w-fit -translate-x-1/2 rounded-lg;
+    border: 1px solid theme('colors.border1');
+    background-color: theme('colors.background1');
+    box-shadow: theme('colors.border1');
+    .icon{
+        @apply h-6 p-4 cursor-pointer rounded-md;
+
+        &:hover, &.active{
+            background: theme('colors.text2');
+        }
+    }
+}
